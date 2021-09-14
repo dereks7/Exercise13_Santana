@@ -31,18 +31,18 @@ public class ex13_santana
         System.out.println("What is the number of years? ");
         Scanner in3 = new Scanner(System.in);
         String numyr = in2.nextLine();
-        double n3 = Double.parseDouble(numyr);
+        int n3 = Integer.parseInt(numyr);
         System.out.println("What is the number of times the interest is compounded per year? ");
         Scanner in4 = new Scanner(System.in);
         String times = in2.nextLine();
-        double n4 = Double.parseDouble(times);
+        int n4 = Integer.parseInt(times);
         double rate = (n2/100);
         double worth = n1*(1+(rate*n3));
         double ins = (1+rate/n4);
         double exp = (n4*n3);
         double tot = (n1*(Math.pow(ins,exp)));
         double round = Math.round(tot*100.0)/100.0;
-        System.out.println("$"+ n1 +  " invested at "+n2+ "% for " + n3 + "years compounded " + n4 + "times per year is $"+round+".");
+        System.out.println("$"+ n1 +  " invested at "+n2+ "% for " + n3 + " years compounded " + n4 + " times per year is $"+round+".");
 
     }
 }
